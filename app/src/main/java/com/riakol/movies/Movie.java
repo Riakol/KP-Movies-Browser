@@ -2,9 +2,10 @@ package com.riakol.movies;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.io.Serializable;
 import java.util.StringTokenizer;
 
-public class Movie {
+public class Movie implements Serializable {
     @SerializedName("id")
     private int id;
     @SerializedName("name")
